@@ -7,27 +7,25 @@ Funcionalidade: Hunter
 
     Contexto:
         Dado um Hunter de nome "Gon Freecss"
-        E ele sempre começa a viagem com 1 refeição
+        E ele sempre começa a viagem com 2 refeição
         E ele sempre começa a viagem saudável.
 
     Cenário: Caçou para conseguir mais refeições
         Quando o Hunter sair para caçar 1 vezes
-        Então a quantidade de refeições deve ser igual a 6
+        Então a quantidade de refeições do Hunter deve ser igual a 7
 
     Cenário: Comeu e seguiu saudável
-        Quando o Traveler parar para comer 1 vezes
-        Então a quantidade de refeições deve ser igual a 0
-        E o Traveler não ficará doente
-
-    Cenário: Saiu para caçar, comeu e seguiu saudável
-        Quando o Hunter sair para caçar 2 vezes
-        E o Hunter parar para comer 2 vezes
-        Então a quantidade de refeições deve ser igual a 12
+        Quando o Hunter parar para comer 1 vezes
+        Então a quantidade de refeições do Hunter deve ser igual a 5
         E o Hunter não ficará doente
 
+    Cenário: Saiu para caçar 2 vezes
+        Quando o Hunter sair para caçar 2 vezes
+        Então a quantidade de refeições do Hunter deve ser igual a 15
+
     Cenário: Comeu e ficou doente
-        Quando o Hunter parar para comer 2 vezes
-        Então a quantidade de refeições deve ser igual a 1
+        Quando o Hunter parar para comer 8 vezes
+        Então a quantidade de refeições do Hunter deve ser igual a 0
         E o Hunter ficará doente
 
     
