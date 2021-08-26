@@ -39,9 +39,6 @@ When('me for perguntado a quantidade de assentos disponíveis', function () {
     availableSeat = carroca.getAvailableSeatCount();
 });
 
-When('me perguntarem o total de refeições a bordo', function () {
-    totalFood = carroca.totalFood();
-});
 
 When('me perguntarem se devemos fazer quarentena', function () {
     shouldQuarantine = carroca.shouldQuarantine();
@@ -84,8 +81,4 @@ Then('ele deverá ser adicionada à lista de passageiros', function () {
 Then('devo responder que a quantidade de assentos disponíveis é {int}', function (int) {
     assert.strictEqual(availableSeat, int);
 });
-
-
-
-
 

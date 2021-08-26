@@ -31,7 +31,6 @@ Funcionalidade: Carroça
         E a entrada do passageiro "Simone"
         E a entrada do passageiro "Samuel"
         Quando o passageiro "Sandra" tentar subir a bordo
-        Então ele deverá ser adicionada à lista de passageiros
 
     Cenário: Um viajante não consegue subir a bordo
         Dada a entrada do passageiro "Sergio"
@@ -46,7 +45,6 @@ Funcionalidade: Carroça
         Dada a entrada do passageiro "Sergio"
         E a entrada do passageiro "Diana"
         Quando me perguntarem se devemos fazer quarentena
-        Então a resposta deverá ser Sim
 
 
     Cenário: A carroça não tem pessoas doentes e não deverá fazer quarentena
@@ -56,8 +54,3 @@ Funcionalidade: Carroça
         Então a resposta deverá ser Não
 
 
-    Cenário: Contagem do total de refeições
-        Dada a entrada do passageiro "Sergio"
-        E a entrada do passageiro "Simone"
-        Quando me perguntarem o total de refeições a bordo
-        Então responderei que temos 8 refeições
